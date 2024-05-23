@@ -1,0 +1,21 @@
+{
+  "Outputs" : {
+    "NextDayGoal (ml)" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "TotalIntake (ml)" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "PreviousGoal (ml)" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "Achieved" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

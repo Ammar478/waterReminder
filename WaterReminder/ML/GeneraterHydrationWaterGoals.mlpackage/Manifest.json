@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "054C3C7D-4913-4DF1-A726-2F82ACBEF9AC": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "GeneraterHydrationWaterGoals.mlmodel",
+            "path": "com.apple.CoreML/GeneraterHydrationWaterGoals.mlmodel"
+        },
+        "6094E92A-08C7-480A-AB2D-BB40F8F1788B": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "C7A6FC23-EB2F-4B23-BCCD-40B7E5470DA9": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        }
+    },
+    "rootModelIdentifier": "054C3C7D-4913-4DF1-A726-2F82ACBEF9AC"
+}

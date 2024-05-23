@@ -1,0 +1,33 @@
+{
+  "Outputs" : {
+    "next_day_goal" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "weight" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "intake" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "activity_level" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "age" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "initial_goal" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "sex" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "is_goal_met" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

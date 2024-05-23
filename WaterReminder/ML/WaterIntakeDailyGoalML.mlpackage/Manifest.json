@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "34E31034-FE26-49E7-A6F3-34AF73714595": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        },
+        "C1F6A0E1-E1E8-40A2-AC8E-F22968EA9C53": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "CEA75ADC-201C-4165-A450-2EB0308EC5C7": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "WaterIntakeDailyGoalML.mlmodel",
+            "path": "com.apple.CoreML/WaterIntakeDailyGoalML.mlmodel"
+        }
+    },
+    "rootModelIdentifier": "CEA75ADC-201C-4165-A450-2EB0308EC5C7"
+}
