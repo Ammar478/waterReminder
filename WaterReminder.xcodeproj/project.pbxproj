@@ -12,7 +12,6 @@
 		F05351732BE25EE1002515B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05351722BE25EE1002515B8 /* Preview Assets.xcassets */; };
 		F053517A2BE26821002515B8 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351792BE26821002515B8 /* UserProfile.swift */; };
 		F053517F2BE397FC002515B8 /* NumberAnimatableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */; };
-		F05351812BE39F52002515B8 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351802BE39F52002515B8 /* ProgressBar.swift */; };
 		F05351832BE3A416002515B8 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351822BE3A416002515B8 /* DashboardView.swift */; };
 		F05351852BE3C76B002515B8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351842BE3C76B002515B8 /* RootView.swift */; };
 		F05351892BE3D0C6002515B8 /* PreviewContiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351882BE3D0C6002515B8 /* PreviewContiner.swift */; };
@@ -66,6 +65,7 @@
 		F05979852C15909500822F38 /* SectionHistoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05979842C15909500822F38 /* SectionHistoryHeaderView.swift */; };
 		F05979872C15975900822F38 /* CustomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05979862C15975900822F38 /* CustomBackground.swift */; };
 		F05979892C15BA6B00822F38 /* HydrationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05979882C15BA6B00822F38 /* HydrationListView.swift */; };
+		F059798B2C15E13000822F38 /* GaugeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059798A2C15E13000822F38 /* GaugeProgressView.swift */; };
 		F07615922BF3DF6B009A9F6B /* WaterIntakeOverviewChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615912BF3DF6B009A9F6B /* WaterIntakeOverviewChart.swift */; };
 		F07615942BF3EA9A009A9F6B /* DrinkTypePieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615932BF3EA9A009A9F6B /* DrinkTypePieChartView.swift */; };
 		F07615962BF3F878009A9F6B /* WaterIntakeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615952BF3F878009A9F6B /* WaterIntakeDetails.swift */; };
@@ -108,7 +108,6 @@
 		F05351722BE25EE1002515B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F05351792BE26821002515B8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAnimatableValue.swift; sourceTree = "<group>"; };
-		F05351802BE39F52002515B8 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		F05351822BE3A416002515B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		F05351842BE3C76B002515B8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		F05351882BE3D0C6002515B8 /* PreviewContiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContiner.swift; sourceTree = "<group>"; };
@@ -163,6 +162,7 @@
 		F05979842C15909500822F38 /* SectionHistoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHistoryHeaderView.swift; sourceTree = "<group>"; };
 		F05979862C15975900822F38 /* CustomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackground.swift; sourceTree = "<group>"; };
 		F05979882C15BA6B00822F38 /* HydrationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationListView.swift; sourceTree = "<group>"; };
+		F059798A2C15E13000822F38 /* GaugeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeProgressView.swift; sourceTree = "<group>"; };
 		F07615912BF3DF6B009A9F6B /* WaterIntakeOverviewChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeOverviewChart.swift; sourceTree = "<group>"; };
 		F07615932BF3EA9A009A9F6B /* DrinkTypePieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTypePieChartView.swift; sourceTree = "<group>"; };
 		F07615952BF3F878009A9F6B /* WaterIntakeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeDetails.swift; sourceTree = "<group>"; };
@@ -408,7 +408,6 @@
 		F05979832C15897200822F38 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				F05351802BE39F52002515B8 /* ProgressBar.swift */,
 				F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */,
 				F053518A2BE3D25F002515B8 /* ChangeCupButton.swift */,
 				F05352112BF021E5002515B8 /* CustomPickerField.swift */,
@@ -424,6 +423,7 @@
 				F053520B2BEF8D02002515B8 /* CustomIndicatorView.swift */,
 				F05352132BF02210002515B8 /* CustomInputField.swift */,
 				F05979862C15975900822F38 /* CustomBackground.swift */,
+				F059798A2C15E13000822F38 /* GaugeProgressView.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -589,7 +589,7 @@
 				F053518D2BE3D3F6002515B8 /* SwitchCup.swift in Sources */,
 				F053519E2BE5616A002515B8 /* AddWater.swift in Sources */,
 				F05351CF2BEA01E2002515B8 /* ContentUnAvailableUI.swift in Sources */,
-				F05351812BE39F52002515B8 /* ProgressBar.swift in Sources */,
+				F059798B2C15E13000822F38 /* GaugeProgressView.swift in Sources */,
 				F05979622BFB40DC00822F38 /* GeneraterHydrationWaterGoals.mlpackage in Sources */,
 				F053520A2BEF8557002515B8 /* PageIntro.swift in Sources */,
 				F05979892C15BA6B00822F38 /* HydrationListView.swift in Sources */,

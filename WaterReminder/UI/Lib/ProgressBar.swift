@@ -7,33 +7,38 @@
 
 import SwiftUI
 
-struct ProgressBar: View {
+struct GaugeProgressStyle:ProgressViewStyle{
     var amountDrinked:Double
     var dailyGoal:Double
     var progress:Float
-    
-    var isCompleted:Bool{
-        progress >= 1
+    var trimAmount = 0.3
+    var strokeWidth = 25.0
+    var strokeColor = Color.pointer
+    let formatter = NumberFormatter()
+    var rotation: Angle {
+        Angle(radians: .pi * (1 - trimAmount)) + Angle(radians: .pi / 2)
     }
-    
-    var body: some View {
-        ZStack{
+
+    func makeBody(configuration: Configuration) -> some View {
+        let fractionCompleted = configuration.fractionCompleted ?? 0
+
+        formatter.numberStyle = .percent
+        let percentage = formatter.string(from: fractionCompleted as NSNumber) ?? "0%"
+
+        return ZStack {
             Circle()
-                .stroke(lineWidth: 20.0)
-                .foregroundStyle(.pointer.opacity(0.3))
-                
-         
-            
+                .rotation(rotation)
+                .trim(from: 0, to: CGFloat(trimAmount))
+                .stroke(strokeColor.opacity(0.5), style: StrokeStyle(lineWidth: CGFloat(strokeWidth), lineCap: .round))
+
             Circle()
-                .trim(from: 0.0,to:CGFloat(min(self.progress,1.0)))
-                .stroke(style: StrokeStyle(lineWidth: 10,lineCap: .round,lineJoin: .round))
-                .foregroundStyle(isCompleted ? .success : .pointer)
-                .rotationEffect(Angle(degrees: 270))
-                .animation(.easeInOut(duration: 0.6),value:progress)
+                .rotation(rotation)
+                .trim(from: 0, to: CGFloat(trimAmount * fractionCompleted))
+                .stroke(strokeColor, style: StrokeStyle(lineWidth: CGFloat(strokeWidth), lineCap: .round))
 
             
             VStack{
-                Text(progress, format: .percent.precision(.fractionLength(0)))
+                Text(percentage)
                     .contentTransition(.numericText())
                     .font(.title)
                     .bold()
@@ -89,8 +94,22 @@ struct ProgressBar: View {
             }
         }
     }
+    
+}
+
+struct ProgressBar: View {
+    var amountDrinked:Double
+    var dailyGoal:Double
+    var progress:Float
+    
+    var body: some View {
+        ProgressView("Label", value: progress, total: 1.0)
+            .progressViewStyle(GaugeProgressStyle(amountDrinked: amountDrinked,
+                                                  dailyGoal: dailyGoal,progress: progress))
+            .frame(width: 200)
+    }
 }
 
 #Preview {
-    ProgressBar(amountDrinked: 3900, dailyGoal: 3000, progress: 0.3)
+    ProgressBar(amountDrinked: 3900, dailyGoal: 3000, progress: 0.1)
 }

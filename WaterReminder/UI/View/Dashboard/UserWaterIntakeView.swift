@@ -15,7 +15,7 @@ struct UserWaterIntakeView: View {
             if let dailyWater = user.dailyWater {
                 VStack(spacing: 30) {
                     
-                    ProgressBar(amountDrinked: dailyWater.currentDrink,dailyGoal: dailyWater.dailyGoal, progress: dailyWater.progress)
+                    GaugeProgressView(progress: dailyWater.progress, amountDrinked: dailyWater.currentDrink,dailyGoal: dailyWater.dailyGoal)
                         .frame(width: 180, height: 180)
                         .padding()
                     WaterIntakeButtons(dailyWater: dailyWater, cupSize: $cupSize)

@@ -9,8 +9,6 @@ import SwiftUI
 
 struct OnBordingView: View {
     @State private var activeIntro:PageIntro = pagesIntro[0]
-    @State private var keyboardHeight:CGFloat = 0
-    
     
     var body: some View {
         GeometryReader{
