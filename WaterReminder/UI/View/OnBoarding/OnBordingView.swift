@@ -21,10 +21,7 @@ struct OnBordingView: View {
             }
         }
         .padding()
-        .background(Rectangle()
-            .fill( .linearGradient(colors: [.pointer.opacity(0.3),.bgMain,.clear], startPoint: .top, endPoint: .bottom))
-            .ignoresSafeArea()
-        )
+        .customBackground()
     }
 }
 

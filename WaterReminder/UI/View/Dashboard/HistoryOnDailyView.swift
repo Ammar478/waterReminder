@@ -34,13 +34,14 @@ struct HistoryOnDailyView: View {
               
                 
             }header: {
-                
-                
-                Text("Today Record")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-                
-                
+                HStack(alignment:.center,spacing: 7){
+                    Image(systemName: "drop.circle.fill")
+                    Text("Today Record")
+                }
+                .font(.callout)
+                .foregroundStyle(.secondary)
+               
+                 
             }
         }
     }

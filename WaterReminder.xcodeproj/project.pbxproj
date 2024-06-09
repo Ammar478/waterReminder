@@ -10,7 +10,7 @@
 		F053516A2BE25EE0002515B8 /* WaterReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351692BE25EE0002515B8 /* WaterReminderApp.swift */; };
 		F05351702BE25EE1002515B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F053516F2BE25EE1002515B8 /* Assets.xcassets */; };
 		F05351732BE25EE1002515B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05351722BE25EE1002515B8 /* Preview Assets.xcassets */; };
-		F053517A2BE26821002515B8 /* userProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351792BE26821002515B8 /* userProfile.swift */; };
+		F053517A2BE26821002515B8 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351792BE26821002515B8 /* UserProfile.swift */; };
 		F053517F2BE397FC002515B8 /* NumberAnimatableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */; };
 		F05351812BE39F52002515B8 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351802BE39F52002515B8 /* ProgressBar.swift */; };
 		F05351832BE3A416002515B8 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351822BE3A416002515B8 /* DashboardView.swift */; };
@@ -27,7 +27,7 @@
 		F05351A52BE644A3002515B8 /* WaterBottleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351A42BE644A3002515B8 /* WaterBottleButton.swift */; };
 		F05351A72BE644D8002515B8 /* WaterIntakeSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351A62BE644D8002515B8 /* WaterIntakeSizes.swift */; };
 		F05351B72BE8E635002515B8 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351B62BE8E635002515B8 /* HistoryView.swift */; };
-		F05351B92BE8E774002515B8 /* MainViewForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351B82BE8E774002515B8 /* MainViewForUser.swift */; };
+		F05351B92BE8E774002515B8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351B82BE8E774002515B8 /* MainView.swift */; };
 		F05351BD2BE92F2C002515B8 /* DailyWaterDrinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351BC2BE92F2C002515B8 /* DailyWaterDrinkData.swift */; };
 		F05351BF2BE92F85002515B8 /* DrinkHistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351BE2BE92F85002515B8 /* DrinkHistoryData.swift */; };
 		F05351C12BE92FC2002515B8 /* IntakeElementData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351C02BE92FC2002515B8 /* IntakeElementData.swift */; };
@@ -39,8 +39,6 @@
 		F05351CF2BEA01E2002515B8 /* ContentUnAvailableUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351CE2BEA01E2002515B8 /* ContentUnAvailableUI.swift */; };
 		F05351D12BECC43E002515B8 /* DrinkHistoryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351D02BECC43E002515B8 /* DrinkHistoryRecord.swift */; };
 		F05351D42BECD447002515B8 /* HydrationSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351D32BECD447002515B8 /* HydrationSummary.swift */; };
-		F05351D82BED4587002515B8 /* LineChartSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351D72BED4587002515B8 /* LineChartSwiftUIView.swift */; };
-		F05351F82BED6896002515B8 /* OverviewReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351F72BED6896002515B8 /* OverviewReport.swift */; };
 		F05352082BEF60C8002515B8 /* OnBordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05352072BEF60C8002515B8 /* OnBordingView.swift */; };
 		F053520A2BEF8557002515B8 /* PageIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05352092BEF8557002515B8 /* PageIntro.swift */; };
 		F053520C2BEF8D02002515B8 /* CustomIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053520B2BEF8D02002515B8 /* CustomIndicatorView.swift */; };
@@ -57,7 +55,6 @@
 		F053522B2BF0B4F7002515B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F053522A2BF0B4F7002515B8 /* Assets.xcassets */; };
 		F053522F2BF0B4F7002515B8 /* WaterReminderWidgetProjectExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F053521B2BF0B4F6002515B8 /* WaterReminderWidgetProjectExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F05352352BF1EF76002515B8 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05352342BF1EF76002515B8 /* UtilityFunctions.swift */; };
-		F05352372BF2283B002515B8 /* HydrationDetials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05352362BF2283B002515B8 /* HydrationDetials.swift */; };
 		F05352392BF23543002515B8 /* TimeRangePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05352382BF23543002515B8 /* TimeRangePickerView.swift */; };
 		F053523D2BF2A498002515B8 /* MockedDrinkHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053523C2BF2A498002515B8 /* MockedDrinkHistory.swift */; };
 		F05979542BF8D23700822F38 /* ReminderCalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05979532BF8D23700822F38 /* ReminderCalenderView.swift */; };
@@ -66,16 +63,17 @@
 		F059795E2BFA189300822F38 /* EnableNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059795D2BFA189300822F38 /* EnableNotificationView.swift */; };
 		F05979602BFA366200822F38 /* NoHistoryWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F059795F2BFA366200822F38 /* NoHistoryWater.swift */; };
 		F05979622BFB40DC00822F38 /* GeneraterHydrationWaterGoals.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F05979612BFB40DC00822F38 /* GeneraterHydrationWaterGoals.mlpackage */; };
+		F05979852C15909500822F38 /* SectionHistoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05979842C15909500822F38 /* SectionHistoryHeaderView.swift */; };
+		F05979872C15975900822F38 /* CustomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05979862C15975900822F38 /* CustomBackground.swift */; };
+		F05979892C15BA6B00822F38 /* HydrationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05979882C15BA6B00822F38 /* HydrationListView.swift */; };
 		F07615922BF3DF6B009A9F6B /* WaterIntakeOverviewChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615912BF3DF6B009A9F6B /* WaterIntakeOverviewChart.swift */; };
 		F07615942BF3EA9A009A9F6B /* DrinkTypePieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615932BF3EA9A009A9F6B /* DrinkTypePieChartView.swift */; };
 		F07615962BF3F878009A9F6B /* WaterIntakeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615952BF3F878009A9F6B /* WaterIntakeDetails.swift */; };
 		F076159A2BF4ADA9009A9F6B /* DrinkTypeDetailsChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615992BF4ADA9009A9F6B /* DrinkTypeDetailsChart.swift */; };
 		F076159C2BF4DE97009A9F6B /* DrinkAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = F076159B2BF4DE97009A9F6B /* DrinkAnalysis.swift */; };
-		F07615BA2BF7361A009A9F6B /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615B92BF7361A009A9F6B /* SectionView.swift */; };
 		F07615BC2BF73633009A9F6B /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615BB2BF73633009A9F6B /* StatCard.swift */; };
 		F07615BF2BF887B5009A9F6B /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615BE2BF887B5009A9F6B /* CardContent.swift */; };
 		F07615C12BF89F57009A9F6B /* ColorExtansions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615C02BF89F57009A9F6B /* ColorExtansions.swift */; };
-		F07615C32BF8B1D5009A9F6B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F07615C22BF8B1D5009A9F6B /* Launch Screen.storyboard */; };
 		F07615C62BF8B5BD009A9F6B /* NotificationLocalManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07615C52BF8B5BD009A9F6B /* NotificationLocalManger.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,7 +106,7 @@
 		F05351692BE25EE0002515B8 /* WaterReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderApp.swift; sourceTree = "<group>"; };
 		F053516F2BE25EE1002515B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F05351722BE25EE1002515B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F05351792BE26821002515B8 /* userProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
+		F05351792BE26821002515B8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAnimatableValue.swift; sourceTree = "<group>"; };
 		F05351802BE39F52002515B8 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		F05351822BE3A416002515B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -125,7 +123,7 @@
 		F05351A42BE644A3002515B8 /* WaterBottleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBottleButton.swift; sourceTree = "<group>"; };
 		F05351A62BE644D8002515B8 /* WaterIntakeSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeSizes.swift; sourceTree = "<group>"; };
 		F05351B62BE8E635002515B8 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		F05351B82BE8E774002515B8 /* MainViewForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewForUser.swift; sourceTree = "<group>"; };
+		F05351B82BE8E774002515B8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F05351BC2BE92F2C002515B8 /* DailyWaterDrinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWaterDrinkData.swift; sourceTree = "<group>"; };
 		F05351BE2BE92F85002515B8 /* DrinkHistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkHistoryData.swift; sourceTree = "<group>"; };
 		F05351C02BE92FC2002515B8 /* IntakeElementData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeElementData.swift; sourceTree = "<group>"; };
@@ -137,8 +135,6 @@
 		F05351CE2BEA01E2002515B8 /* ContentUnAvailableUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUnAvailableUI.swift; sourceTree = "<group>"; };
 		F05351D02BECC43E002515B8 /* DrinkHistoryRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkHistoryRecord.swift; sourceTree = "<group>"; };
 		F05351D32BECD447002515B8 /* HydrationSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationSummary.swift; sourceTree = "<group>"; };
-		F05351D72BED4587002515B8 /* LineChartSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartSwiftUIView.swift; sourceTree = "<group>"; };
-		F05351F72BED6896002515B8 /* OverviewReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewReport.swift; sourceTree = "<group>"; };
 		F05352072BEF60C8002515B8 /* OnBordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBordingView.swift; sourceTree = "<group>"; };
 		F05352092BEF8557002515B8 /* PageIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIntro.swift; sourceTree = "<group>"; };
 		F053520B2BEF8D02002515B8 /* CustomIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicatorView.swift; sourceTree = "<group>"; };
@@ -156,7 +152,6 @@
 		F053522A2BF0B4F7002515B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F053522C2BF0B4F7002515B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F05352342BF1EF76002515B8 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
-		F05352362BF2283B002515B8 /* HydrationDetials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationDetials.swift; sourceTree = "<group>"; };
 		F05352382BF23543002515B8 /* TimeRangePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangePickerView.swift; sourceTree = "<group>"; };
 		F053523C2BF2A498002515B8 /* MockedDrinkHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDrinkHistory.swift; sourceTree = "<group>"; };
 		F05979532BF8D23700822F38 /* ReminderCalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCalenderView.swift; sourceTree = "<group>"; };
@@ -165,16 +160,17 @@
 		F059795D2BFA189300822F38 /* EnableNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableNotificationView.swift; sourceTree = "<group>"; };
 		F059795F2BFA366200822F38 /* NoHistoryWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHistoryWater.swift; sourceTree = "<group>"; };
 		F05979612BFB40DC00822F38 /* GeneraterHydrationWaterGoals.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = GeneraterHydrationWaterGoals.mlpackage; sourceTree = "<group>"; };
+		F05979842C15909500822F38 /* SectionHistoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHistoryHeaderView.swift; sourceTree = "<group>"; };
+		F05979862C15975900822F38 /* CustomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackground.swift; sourceTree = "<group>"; };
+		F05979882C15BA6B00822F38 /* HydrationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationListView.swift; sourceTree = "<group>"; };
 		F07615912BF3DF6B009A9F6B /* WaterIntakeOverviewChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeOverviewChart.swift; sourceTree = "<group>"; };
 		F07615932BF3EA9A009A9F6B /* DrinkTypePieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTypePieChartView.swift; sourceTree = "<group>"; };
 		F07615952BF3F878009A9F6B /* WaterIntakeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeDetails.swift; sourceTree = "<group>"; };
 		F07615992BF4ADA9009A9F6B /* DrinkTypeDetailsChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTypeDetailsChart.swift; sourceTree = "<group>"; };
 		F076159B2BF4DE97009A9F6B /* DrinkAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkAnalysis.swift; sourceTree = "<group>"; };
-		F07615B92BF7361A009A9F6B /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		F07615BB2BF73633009A9F6B /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCard.swift; sourceTree = "<group>"; };
 		F07615BE2BF887B5009A9F6B /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
 		F07615C02BF89F57009A9F6B /* ColorExtansions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtansions.swift; sourceTree = "<group>"; };
-		F07615C22BF8B1D5009A9F6B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F07615C52BF8B5BD009A9F6B /* NotificationLocalManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLocalManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,17 +216,14 @@
 		F05351682BE25EE0002515B8 /* WaterReminder */ = {
 			isa = PBXGroup;
 			children = (
+				F05979812C15890D00822F38 /* Base */,
 				F07615C42BF8B5A8009A9F6B /* Notifications */,
-				F05351CB2BE94418002515B8 /* Extensions */,
 				F05351A82BE77C91002515B8 /* ML */,
 				F053517D2BE397BE002515B8 /* UI */,
-				F053517B2BE395A9002515B8 /* View */,
-				F05351C42BE93031002515B8 /* Data */,
-				F05351692BE25EE0002515B8 /* WaterReminderApp.swift */,
-				F05979552BF8D8B900822F38 /* LocalNotification.swift */,
+				F05351C42BE93031002515B8 /* Modals */,
 				F053516F2BE25EE1002515B8 /* Assets.xcassets */,
+				F05979822C15892400822F38 /* App */,
 				F05351712BE25EE1002515B8 /* Preview Content */,
-				F07615C22BF8B1D5009A9F6B /* Launch Screen.storyboard */,
 			);
 			path = WaterReminder;
 			sourceTree = "<group>";
@@ -253,7 +246,7 @@
 				F05351D22BECD428002515B8 /* Report */,
 				F05351B52BE8E611002515B8 /* History */,
 				F053518E2BE50D08002515B8 /* Dashboard */,
-				F05351B82BE8E774002515B8 /* MainViewForUser.swift */,
+				F05351B82BE8E774002515B8 /* MainView.swift */,
 				F05351842BE3C76B002515B8 /* RootView.swift */,
 			);
 			path = View;
@@ -262,21 +255,8 @@
 		F053517D2BE397BE002515B8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */,
-				F05351802BE39F52002515B8 /* ProgressBar.swift */,
-				F053518A2BE3D25F002515B8 /* ChangeCupButton.swift */,
-				F05351912BE51060002515B8 /* GroupBoxView.swift */,
-				F053519D2BE5616A002515B8 /* AddWater.swift */,
-				F05351C52BE93484002515B8 /* RingStatus.swift */,
-				F05351C72BE939D4002515B8 /* DaySelect.swift */,
-				F05351C92BE93F85002515B8 /* SelectDateView.swift */,
-				F05351CE2BEA01E2002515B8 /* ContentUnAvailableUI.swift */,
-				F053520B2BEF8D02002515B8 /* CustomIndicatorView.swift */,
-				F05352112BF021E5002515B8 /* CustomPickerField.swift */,
-				F05352132BF02210002515B8 /* CustomInputField.swift */,
-				F05352382BF23543002515B8 /* TimeRangePickerView.swift */,
-				F07615BB2BF73633009A9F6B /* StatCard.swift */,
-				F07615BE2BF887B5009A9F6B /* CardContent.swift */,
+				F053517B2BE395A9002515B8 /* View */,
+				F05979832C15897200822F38 /* Lib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -316,23 +296,22 @@
 			isa = PBXGroup;
 			children = (
 				F05351B62BE8E635002515B8 /* HistoryView.swift */,
-				F05351D72BED4587002515B8 /* LineChartSwiftUIView.swift */,
-				F05351F72BED6896002515B8 /* OverviewReport.swift */,
 				F059795F2BFA366200822F38 /* NoHistoryWater.swift */,
+				F05979842C15909500822F38 /* SectionHistoryHeaderView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
 		};
-		F05351C42BE93031002515B8 /* Data */ = {
+		F05351C42BE93031002515B8 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
-				F05351792BE26821002515B8 /* userProfile.swift */,
+				F05351792BE26821002515B8 /* UserProfile.swift */,
 				F05351C22BE9300E002515B8 /* DrinkUtility.swift */,
 				F05351C02BE92FC2002515B8 /* IntakeElementData.swift */,
 				F05351BE2BE92F85002515B8 /* DrinkHistoryData.swift */,
 				F05351BC2BE92F2C002515B8 /* DailyWaterDrinkData.swift */,
 			);
-			path = Data;
+			path = Modals;
 			sourceTree = "<group>";
 		};
 		F05351CB2BE94418002515B8 /* Extensions */ = {
@@ -353,9 +332,8 @@
 				F07615BD2BF77537009A9F6B /* DrinkTypes */,
 				F05351F92BED6A6E002515B8 /* intak */,
 				F05351D32BECD447002515B8 /* HydrationSummary.swift */,
-				F05352362BF2283B002515B8 /* HydrationDetials.swift */,
-				F07615B92BF7361A009A9F6B /* SectionView.swift */,
 				F076159B2BF4DE97009A9F6B /* DrinkAnalysis.swift */,
+				F05979882C15BA6B00822F38 /* HydrationListView.swift */,
 			);
 			path = Report;
 			sourceTree = "<group>";
@@ -411,6 +389,45 @@
 			path = Reminder;
 			sourceTree = "<group>";
 		};
+		F05979812C15890D00822F38 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F05351CB2BE94418002515B8 /* Extensions */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F05979822C15892400822F38 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F05351692BE25EE0002515B8 /* WaterReminderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F05979832C15897200822F38 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F05351802BE39F52002515B8 /* ProgressBar.swift */,
+				F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */,
+				F053518A2BE3D25F002515B8 /* ChangeCupButton.swift */,
+				F05352112BF021E5002515B8 /* CustomPickerField.swift */,
+				F05352382BF23543002515B8 /* TimeRangePickerView.swift */,
+				F07615BB2BF73633009A9F6B /* StatCard.swift */,
+				F07615BE2BF887B5009A9F6B /* CardContent.swift */,
+				F05351912BE51060002515B8 /* GroupBoxView.swift */,
+				F053519D2BE5616A002515B8 /* AddWater.swift */,
+				F05351C52BE93484002515B8 /* RingStatus.swift */,
+				F05351C72BE939D4002515B8 /* DaySelect.swift */,
+				F05351C92BE93F85002515B8 /* SelectDateView.swift */,
+				F05351CE2BEA01E2002515B8 /* ContentUnAvailableUI.swift */,
+				F053520B2BEF8D02002515B8 /* CustomIndicatorView.swift */,
+				F05352132BF02210002515B8 /* CustomInputField.swift */,
+				F05979862C15975900822F38 /* CustomBackground.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		F07615BD2BF77537009A9F6B /* DrinkTypes */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +440,7 @@
 		F07615C42BF8B5A8009A9F6B /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				F05979552BF8D8B900822F38 /* LocalNotification.swift */,
 				F07615C52BF8B5BD009A9F6B /* NotificationLocalManger.swift */,
 			);
 			path = Notifications;
@@ -509,7 +527,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F07615C32BF8B1D5009A9F6B /* Launch Screen.storyboard in Resources */,
 				F05351732BE25EE1002515B8 /* Preview Assets.xcassets in Resources */,
 				F05351702BE25EE1002515B8 /* Assets.xcassets in Resources */,
 			);
@@ -530,10 +547,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F05352372BF2283B002515B8 /* HydrationDetials.swift in Sources */,
 				F059795C2BFA032200822F38 /* DateComponents.swift in Sources */,
+				F05979872C15975900822F38 /* CustomBackground.swift in Sources */,
 				F053520E2BEF9D83002515B8 /* PersonalInfoView.swift in Sources */,
-				F07615BA2BF7361A009A9F6B /* SectionView.swift in Sources */,
 				F07615C62BF8B5BD009A9F6B /* NotificationLocalManger.swift in Sources */,
 				F05351922BE51060002515B8 /* GroupBoxView.swift in Sources */,
 				F053517F2BE397FC002515B8 /* NumberAnimatableValue.swift in Sources */,
@@ -549,13 +565,12 @@
 				F07615BF2BF887B5009A9F6B /* CardContent.swift in Sources */,
 				F053523D2BF2A498002515B8 /* MockedDrinkHistory.swift in Sources */,
 				F05351C12BE92FC2002515B8 /* IntakeElementData.swift in Sources */,
-				F053517A2BE26821002515B8 /* userProfile.swift in Sources */,
+				F053517A2BE26821002515B8 /* UserProfile.swift in Sources */,
 				F076159C2BF4DE97009A9F6B /* DrinkAnalysis.swift in Sources */,
 				F05979602BFA366200822F38 /* NoHistoryWater.swift in Sources */,
 				F07615942BF3EA9A009A9F6B /* DrinkTypePieChartView.swift in Sources */,
 				F05351B72BE8E635002515B8 /* HistoryView.swift in Sources */,
 				F053519C2BE51C3D002515B8 /* IntakeRecoredElementView.swift in Sources */,
-				F05351D82BED4587002515B8 /* LineChartSwiftUIView.swift in Sources */,
 				F05352142BF02210002515B8 /* CustomInputField.swift in Sources */,
 				F05351D42BECD447002515B8 /* HydrationSummary.swift in Sources */,
 				F053519A2BE51605002515B8 /* HistoryOnDailyView.swift in Sources */,
@@ -565,18 +580,19 @@
 				F05351A72BE644D8002515B8 /* WaterIntakeSizes.swift in Sources */,
 				F05351C62BE93484002515B8 /* RingStatus.swift in Sources */,
 				F05351BF2BE92F85002515B8 /* DrinkHistoryData.swift in Sources */,
-				F05351B92BE8E774002515B8 /* MainViewForUser.swift in Sources */,
+				F05351B92BE8E774002515B8 /* MainView.swift in Sources */,
 				F05351852BE3C76B002515B8 /* RootView.swift in Sources */,
 				F05352082BEF60C8002515B8 /* OnBordingView.swift in Sources */,
 				F05352122BF021E5002515B8 /* CustomPickerField.swift in Sources */,
 				F05352352BF1EF76002515B8 /* UtilityFunctions.swift in Sources */,
+				F05979852C15909500822F38 /* SectionHistoryHeaderView.swift in Sources */,
 				F053518D2BE3D3F6002515B8 /* SwitchCup.swift in Sources */,
 				F053519E2BE5616A002515B8 /* AddWater.swift in Sources */,
-				F05351F82BED6896002515B8 /* OverviewReport.swift in Sources */,
 				F05351CF2BEA01E2002515B8 /* ContentUnAvailableUI.swift in Sources */,
 				F05351812BE39F52002515B8 /* ProgressBar.swift in Sources */,
 				F05979622BFB40DC00822F38 /* GeneraterHydrationWaterGoals.mlpackage in Sources */,
 				F053520A2BEF8557002515B8 /* PageIntro.swift in Sources */,
+				F05979892C15BA6B00822F38 /* HydrationListView.swift in Sources */,
 				F05979562BF8D8B900822F38 /* LocalNotification.swift in Sources */,
 				F05979542BF8D23700822F38 /* ReminderCalenderView.swift in Sources */,
 				F05351892BE3D0C6002515B8 /* PreviewContiner.swift in Sources */,

@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum ReportDestinations: Hashable {
+    case intake
+    case goal
+}
+
 struct DrinkAnalysis {
     let bestDrinkType: DrinkTypes?
     let bestDrinkPercentage: Int?

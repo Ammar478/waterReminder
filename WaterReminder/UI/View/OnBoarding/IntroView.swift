@@ -58,7 +58,7 @@ struct IntroView<ActiveView:View>:View {
                         Button{
                             if inro.introAssetImage == "image4"{
                                 Task{
-                                    try? await nlManger.requestAuthorization()
+                                    await nlManger.requestAuthorization()
                                     changeInrto()
                                 }
                             } else{
@@ -112,6 +112,7 @@ struct IntroView<ActiveView:View>:View {
             }
         }
     }
+    
     func changeInrto(_ isPrevious:Bool = false){
         withAnimation(.spring(response: 0.8,dampingFraction: 0.8,blendDuration: 0)){
             hideHoolView = true

@@ -20,8 +20,8 @@ struct UserWaterIntakeView: View {
                         .padding()
                     WaterIntakeButtons(dailyWater: dailyWater, cupSize: $cupSize)
 
-                        HistoryOnDailyView(dailyWater: dailyWater)
-                            .padding(.horizontal,10)
+                    HistoryOnDailyView(dailyWater: dailyWater)
+                        .padding(.horizontal,10)
                     
                    
                 }

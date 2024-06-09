@@ -15,25 +15,24 @@ struct RootView: View {
     var body: some View {
         VStack{
             switch users.isEmpty{
-                
             case true:
                 OnBordingView()
             case false:
-                MainViewForUser(users: users)
-                
+                MainView(users: users)
+                    .onAppear {
+                        handleNewDay()
+                    }
             }
         }
-        .onAppear {
-            handleNewDay()
-        }
+        
     }
     
     private func handleNewDay() {
         let currentDate = Date.now
         let lastRecordedDate = users.first?.dailyWater?.dailyDate ?? nil
         
-        if let record = lastRecordedDate{ 
-           if isDifferentDay(currentDate, from: record) {
+        if let record = lastRecordedDate{
+            if isDifferentDay(currentDate, from: record) {
                 recordNewDay(currentDate)
             }
         }else{

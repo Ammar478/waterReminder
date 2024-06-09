@@ -62,6 +62,5 @@ struct NoHistoryView: View {
             Spacer()
         }
         .padding()
-        .padding(.horizontal)
     }
 }

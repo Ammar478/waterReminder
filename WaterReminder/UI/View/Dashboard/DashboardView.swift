@@ -10,7 +10,7 @@ import SwiftData
 
 struct DashboardView: View {
     var user:UserProfile
-    @State private var cupSize: WaterIntake = WaterIntake(id: 0, amount: 100, drinkType: .water)
+    @State private var cupSize: WaterIntake = WaterIntake(id: 0, amount: 150, drinkType: .water)
     
     var body: some View {
         NavigationStack {
@@ -23,11 +23,8 @@ struct DashboardView: View {
                 
             }
             .navigationTitle("Today")
-            .navigationBarTitleDisplayMode(.inline)
-            .background(Rectangle()
-                .fill( .linearGradient(colors: [cupSize.drinkType.color.opacity(0.3),.bgMain,.clear], startPoint: .top, endPoint: .bottom))
-                .ignoresSafeArea()
-            )
+//            .navigationBarTitleDisplayMode(.inline)
+            .customBackground()
             
         }
         

@@ -39,7 +39,7 @@ struct ReminderView: View {
                 )
                 .ignoresSafeArea()
             )
-            .onChange(of: scenePhase) { newPhase in
+            .onChange(of: scenePhase) { newPhase, _ in
                 if newPhase == .active {
                     Task {
                         await notificationManager.getCurrentSetting()
@@ -78,7 +78,7 @@ struct ReminderView: View {
             }
             .toggleStyle(SwitchToggleStyle(tint: .pointer))
             .padding(.horizontal)
-            .onChange(of: allDaysSelected) { newValue in
+            .onChange(of: allDaysSelected) { newValue, _ in
                 for day in selectedDays.keys {
                     selectedDays[day] = newValue
                 }

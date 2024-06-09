@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainViewForUser: View {
+struct MainView: View {
     var users:[UserProfile]
     
     var body: some View {
@@ -16,15 +16,7 @@ struct MainViewForUser: View {
                 TabView{
                     DashboardView(user: user)
                         .tabItem {
-                            
-                            VStack{
-                                Image(systemName: "sun.horizon")
-                                    .renderingMode(.original)
-                                
-                                
-                                Text("Today")
-                            }
-                            
+                            Label("Today", systemImage: "sun.horizon")
                         }
                     
                     HistoryView(user: user)

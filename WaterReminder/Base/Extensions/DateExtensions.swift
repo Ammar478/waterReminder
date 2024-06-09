@@ -34,5 +34,8 @@ extension Date {
         return formater.string(from: self)
     }
     
+    var isToday: Bool {
+            Calendar.current.isDateInToday(self)
+        }
 
 }
