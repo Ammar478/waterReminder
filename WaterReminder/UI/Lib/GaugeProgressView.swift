@@ -90,6 +90,8 @@ struct GaugeProgressStyles: ProgressViewStyle {
                                 .foregroundStyle(.sText)
                                 .opacity(1)
                                 .monospacedDigit()
+                            
+                            
                         }
                     }
                 }
