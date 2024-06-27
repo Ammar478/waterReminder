@@ -8,19 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		5F4340B82C2AEDB90077D82C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4340B72C2AEDB90077D82C /* Coordinator.swift */; };
+		5FFE8F822C2D944E00D6FEA4 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F812C2D944E00D6FEA4 /* UserProfileViewModel.swift */; };
+		5FFE8F842C2D950700D6FEA4 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F832C2D950700D6FEA4 /* UserProfileView.swift */; };
+		5FFE8F862C2D9CF900D6FEA4 /* WaterIntakeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F852C2D9CF900D6FEA4 /* WaterIntakeManager.swift */; };
+		5FFE8F882C2D9EB600D6FEA4 /* WaterIntakeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F872C2D9EB600D6FEA4 /* WaterIntakeSelectionView.swift */; };
+		5FFE8F8A2C2DA03200D6FEA4 /* WaterIntakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F892C2DA03200D6FEA4 /* WaterIntakeModel.swift */; };
+		5FFE8F8D2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F8C2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift */; };
+		5FFE8F8F2C2DA88100D6FEA4 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F8E2C2DA88100D6FEA4 /* GridSection.swift */; };
+		5FFE8F912C2DA8D800D6FEA4 /* WaterSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F902C2DA8D800D6FEA4 /* WaterSelectionModel.swift */; };
 		F053516A2BE25EE0002515B8 /* WaterReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351692BE25EE0002515B8 /* WaterReminderApp.swift */; };
 		F05351702BE25EE1002515B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F053516F2BE25EE1002515B8 /* Assets.xcassets */; };
 		F05351732BE25EE1002515B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05351722BE25EE1002515B8 /* Preview Assets.xcassets */; };
 		F053517A2BE26821002515B8 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351792BE26821002515B8 /* UserProfile.swift */; };
 		F053517F2BE397FC002515B8 /* NumberAnimatableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */; };
 		F05351832BE3A416002515B8 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351822BE3A416002515B8 /* DashboardView.swift */; };
-		F05351852BE3C76B002515B8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351842BE3C76B002515B8 /* RootView.swift */; };
 		F05351892BE3D0C6002515B8 /* PreviewContiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351882BE3D0C6002515B8 /* PreviewContiner.swift */; };
 		F053518B2BE3D25F002515B8 /* ChangeCupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053518A2BE3D25F002515B8 /* ChangeCupButton.swift */; };
 		F053518D2BE3D3F6002515B8 /* SwitchCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053518C2BE3D3F6002515B8 /* SwitchCup.swift */; };
 		F05351922BE51060002515B8 /* GroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351912BE51060002515B8 /* GroupBoxView.swift */; };
 		F05351942BE5158C002515B8 /* UserWaterIntakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351932BE5158C002515B8 /* UserWaterIntakeView.swift */; };
-		F05351982BE515CD002515B8 /* WaterIntakeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351972BE515CD002515B8 /* WaterIntakeButtons.swift */; };
+		F05351982BE515CD002515B8 /* WaterIntakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351972BE515CD002515B8 /* WaterIntakeView.swift */; };
 		F053519A2BE51605002515B8 /* HistoryOnDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351992BE51605002515B8 /* HistoryOnDailyView.swift */; };
 		F053519C2BE51C3D002515B8 /* IntakeRecoredElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053519B2BE51C3D002515B8 /* IntakeRecoredElementView.swift */; };
 		F053519E2BE5616A002515B8 /* AddWater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053519D2BE5616A002515B8 /* AddWater.swift */; };
@@ -104,6 +111,14 @@
 
 /* Begin PBXFileReference section */
 		5F4340B72C2AEDB90077D82C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5FFE8F812C2D944E00D6FEA4 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		5FFE8F832C2D950700D6FEA4 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		5FFE8F852C2D9CF900D6FEA4 /* WaterIntakeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeManager.swift; sourceTree = "<group>"; };
+		5FFE8F872C2D9EB600D6FEA4 /* WaterIntakeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeSelectionView.swift; sourceTree = "<group>"; };
+		5FFE8F892C2DA03200D6FEA4 /* WaterIntakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeModel.swift; sourceTree = "<group>"; };
+		5FFE8F8C2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCupButtonContent.swift; sourceTree = "<group>"; };
+		5FFE8F8E2C2DA88100D6FEA4 /* GridSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
+		5FFE8F902C2DA8D800D6FEA4 /* WaterSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSelectionModel.swift; sourceTree = "<group>"; };
 		F05351662BE25EE0002515B8 /* WaterReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05351692BE25EE0002515B8 /* WaterReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderApp.swift; sourceTree = "<group>"; };
 		F053516F2BE25EE1002515B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,13 +126,12 @@
 		F05351792BE26821002515B8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAnimatableValue.swift; sourceTree = "<group>"; };
 		F05351822BE3A416002515B8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		F05351842BE3C76B002515B8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		F05351882BE3D0C6002515B8 /* PreviewContiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContiner.swift; sourceTree = "<group>"; };
 		F053518A2BE3D25F002515B8 /* ChangeCupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCupButton.swift; sourceTree = "<group>"; };
 		F053518C2BE3D3F6002515B8 /* SwitchCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCup.swift; sourceTree = "<group>"; };
 		F05351912BE51060002515B8 /* GroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxView.swift; sourceTree = "<group>"; };
 		F05351932BE5158C002515B8 /* UserWaterIntakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWaterIntakeView.swift; sourceTree = "<group>"; };
-		F05351972BE515CD002515B8 /* WaterIntakeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeButtons.swift; sourceTree = "<group>"; };
+		F05351972BE515CD002515B8 /* WaterIntakeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeView.swift; sourceTree = "<group>"; };
 		F05351992BE51605002515B8 /* HistoryOnDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOnDailyView.swift; sourceTree = "<group>"; };
 		F053519B2BE51C3D002515B8 /* IntakeRecoredElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeRecoredElementView.swift; sourceTree = "<group>"; };
 		F053519D2BE5616A002515B8 /* AddWater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWater.swift; sourceTree = "<group>"; };
@@ -196,6 +210,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FFE8F802C2D941100D6FEA4 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5FFE8F812C2D944E00D6FEA4 /* UserProfileViewModel.swift */,
+				5FFE8F832C2D950700D6FEA4 /* UserProfileView.swift */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		5FFE8F8B2C2DA4E900D6FEA4 /* WaterSelectionCup */ = {
+			isa = PBXGroup;
+			children = (
+				F05351A62BE644D8002515B8 /* WaterIntakeSizes.swift */,
+				F053518C2BE3D3F6002515B8 /* SwitchCup.swift */,
+				F05351A42BE644A3002515B8 /* WaterBottleButton.swift */,
+				5FFE8F872C2D9EB600D6FEA4 /* WaterIntakeSelectionView.swift */,
+				F053518A2BE3D25F002515B8 /* ChangeCupButton.swift */,
+				5FFE8F8E2C2DA88100D6FEA4 /* GridSection.swift */,
+				5FFE8F902C2DA8D800D6FEA4 /* WaterSelectionModel.swift */,
+			);
+			path = WaterSelectionCup;
+			sourceTree = "<group>";
+		};
 		F053515D2BE25EE0002515B8 = {
 			isa = PBXGroup;
 			children = (
@@ -243,13 +280,13 @@
 		F053517B2BE395A9002515B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5FFE8F802C2D941100D6FEA4 /* UserProfile */,
 				F05979522BF8D22500822F38 /* Reminder */,
 				F05352062BEF60B4002515B8 /* OnBoarding */,
 				F05351D22BECD428002515B8 /* Report */,
 				F05351B52BE8E611002515B8 /* History */,
 				F053518E2BE50D08002515B8 /* Dashboard */,
 				F05351B82BE8E774002515B8 /* MainView.swift */,
-				F05351842BE3C76B002515B8 /* RootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,7 +303,7 @@
 		F053518E2BE50D08002515B8 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				F05351A32BE64445002515B8 /* IntakeButtons */,
+				F05351A32BE64445002515B8 /* Water Intake */,
 				F05351822BE3A416002515B8 /* DashboardView.swift */,
 				F05351932BE5158C002515B8 /* UserWaterIntakeView.swift */,
 				F05351992BE51605002515B8 /* HistoryOnDailyView.swift */,
@@ -275,15 +312,15 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		F05351A32BE64445002515B8 /* IntakeButtons */ = {
+		F05351A32BE64445002515B8 /* Water Intake */ = {
 			isa = PBXGroup;
 			children = (
-				F05351972BE515CD002515B8 /* WaterIntakeButtons.swift */,
-				F053518C2BE3D3F6002515B8 /* SwitchCup.swift */,
-				F05351A42BE644A3002515B8 /* WaterBottleButton.swift */,
-				F05351A62BE644D8002515B8 /* WaterIntakeSizes.swift */,
+				5FFE8F8B2C2DA4E900D6FEA4 /* WaterSelectionCup */,
+				F05351972BE515CD002515B8 /* WaterIntakeView.swift */,
+				5FFE8F852C2D9CF900D6FEA4 /* WaterIntakeManager.swift */,
+				5FFE8F892C2DA03200D6FEA4 /* WaterIntakeModel.swift */,
 			);
-			path = IntakeButtons;
+			path = "Water Intake";
 			sourceTree = "<group>";
 		};
 		F05351A82BE77C91002515B8 /* ML */ = {
@@ -412,7 +449,6 @@
 			isa = PBXGroup;
 			children = (
 				F053517E2BE397FC002515B8 /* NumberAnimatableValue.swift */,
-				F053518A2BE3D25F002515B8 /* ChangeCupButton.swift */,
 				F05352112BF021E5002515B8 /* CustomPickerField.swift */,
 				F05352382BF23543002515B8 /* TimeRangePickerView.swift */,
 				F07615BB2BF73633009A9F6B /* StatCard.swift */,
@@ -427,6 +463,7 @@
 				F05352132BF02210002515B8 /* CustomInputField.swift */,
 				F05979862C15975900822F38 /* CustomBackground.swift */,
 				F059798A2C15E13000822F38 /* GaugeProgressView.swift */,
+				5FFE8F8C2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -555,10 +592,12 @@
 				F053520E2BEF9D83002515B8 /* PersonalInfoView.swift in Sources */,
 				F07615C62BF8B5BD009A9F6B /* NotificationLocalManger.swift in Sources */,
 				F05351922BE51060002515B8 /* GroupBoxView.swift in Sources */,
+				5FFE8F8A2C2DA03200D6FEA4 /* WaterIntakeModel.swift in Sources */,
+				5FFE8F882C2D9EB600D6FEA4 /* WaterIntakeSelectionView.swift in Sources */,
 				F053517F2BE397FC002515B8 /* NumberAnimatableValue.swift in Sources */,
 				F059795E2BFA189300822F38 /* EnableNotificationView.swift in Sources */,
 				F053518B2BE3D25F002515B8 /* ChangeCupButton.swift in Sources */,
-				F05351982BE515CD002515B8 /* WaterIntakeButtons.swift in Sources */,
+				F05351982BE515CD002515B8 /* WaterIntakeView.swift in Sources */,
 				F07615BC2BF73633009A9F6B /* StatCard.swift in Sources */,
 				F05351C32BE9300E002515B8 /* DrinkUtility.swift in Sources */,
 				F07615C12BF89F57009A9F6B /* ColorExtansions.swift in Sources */,
@@ -566,6 +605,7 @@
 				F05352392BF23543002515B8 /* TimeRangePickerView.swift in Sources */,
 				F05351C82BE939D4002515B8 /* DaySelect.swift in Sources */,
 				F07615BF2BF887B5009A9F6B /* CardContent.swift in Sources */,
+				5FFE8F842C2D950700D6FEA4 /* UserProfileView.swift in Sources */,
 				F053523D2BF2A498002515B8 /* MockedDrinkHistory.swift in Sources */,
 				F05351C12BE92FC2002515B8 /* IntakeElementData.swift in Sources */,
 				F053517A2BE26821002515B8 /* UserProfile.swift in Sources */,
@@ -575,6 +615,7 @@
 				F05351B72BE8E635002515B8 /* HistoryView.swift in Sources */,
 				5F4340B82C2AEDB90077D82C /* Coordinator.swift in Sources */,
 				F053519C2BE51C3D002515B8 /* IntakeRecoredElementView.swift in Sources */,
+				5FFE8F862C2D9CF900D6FEA4 /* WaterIntakeManager.swift in Sources */,
 				F05352142BF02210002515B8 /* CustomInputField.swift in Sources */,
 				F05351D42BECD447002515B8 /* HydrationSummary.swift in Sources */,
 				F053519A2BE51605002515B8 /* HistoryOnDailyView.swift in Sources */,
@@ -585,7 +626,6 @@
 				F05351C62BE93484002515B8 /* RingStatus.swift in Sources */,
 				F05351BF2BE92F85002515B8 /* DrinkHistoryData.swift in Sources */,
 				F05351B92BE8E774002515B8 /* MainView.swift in Sources */,
-				F05351852BE3C76B002515B8 /* RootView.swift in Sources */,
 				F05352082BEF60C8002515B8 /* OnBordingView.swift in Sources */,
 				F05352122BF021E5002515B8 /* CustomPickerField.swift in Sources */,
 				F05352352BF1EF76002515B8 /* UtilityFunctions.swift in Sources */,
@@ -597,6 +637,7 @@
 				F05979622BFB40DC00822F38 /* GeneraterHydrationWaterGoals.mlpackage in Sources */,
 				F053520A2BEF8557002515B8 /* PageIntro.swift in Sources */,
 				F05979892C15BA6B00822F38 /* HydrationListView.swift in Sources */,
+				5FFE8F8F2C2DA88100D6FEA4 /* GridSection.swift in Sources */,
 				F05979562BF8D8B900822F38 /* LocalNotification.swift in Sources */,
 				F05979542BF8D23700822F38 /* ReminderCalenderView.swift in Sources */,
 				F05351892BE3D0C6002515B8 /* PreviewContiner.swift in Sources */,
@@ -605,9 +646,12 @@
 				F05351BD2BE92F2C002515B8 /* DailyWaterDrinkData.swift in Sources */,
 				F05351D12BECC43E002515B8 /* DrinkHistoryRecord.swift in Sources */,
 				F076159A2BF4ADA9009A9F6B /* DrinkTypeDetailsChart.swift in Sources */,
+				5FFE8F822C2D944E00D6FEA4 /* UserProfileViewModel.swift in Sources */,
 				F053520C2BEF8D02002515B8 /* CustomIndicatorView.swift in Sources */,
+				5FFE8F8D2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift in Sources */,
 				F05351CD2BE94434002515B8 /* DateExtensions.swift in Sources */,
 				F053516A2BE25EE0002515B8 /* WaterReminderApp.swift in Sources */,
+				5FFE8F912C2DA8D800D6FEA4 /* WaterSelectionModel.swift in Sources */,
 				F05351A52BE644A3002515B8 /* WaterBottleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

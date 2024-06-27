@@ -14,16 +14,15 @@ struct UserWaterIntakeView: View {
     var body: some View {
             if let dailyWater = user.dailyWater {
                 VStack(spacing: 30) {
-                    
                     GaugeProgressView(progress: dailyWater.progress, amountDrinked: dailyWater.currentDrink,dailyGoal: dailyWater.dailyGoal)
                         .frame(width: 180, height: 180)
                         .padding()
-                    WaterIntakeButtons(dailyWater: dailyWater, cupSize: $cupSize)
+                    
+                    WaterIntakeView(dailyWater: dailyWater, cupSize: $cupSize)
 
                     HistoryOnDailyView(dailyWater: dailyWater)
                         .padding(.horizontal,10)
                     
-                   
                 }
             }
         }

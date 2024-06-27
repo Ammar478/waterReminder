@@ -21,12 +21,10 @@ struct WaterIntakeView: View {
     var body: some View {
         VStack(spacing: 10) {
             AddWater(cupSize: cupSize,
-                     action: 
-                        { waterIntakeModel.addIntakeWater(amount: cupSize,modelContext: self.modelContext) })
+                     action: { waterIntakeModel.addIntakeWater(amount: cupSize,modelContext: self.modelContext) })
             
             WaterIntakeSelectionView(cupSize: $cupSize,
-                                     changeCupSize:
-                                        { waterIntakeModel.changeCupSize($0, cupSize: $cupSize) })
+                                     changeCupSize:{ waterIntakeModel.changeCupSize($0, cupSize: $cupSize) })
         }
     }
 }

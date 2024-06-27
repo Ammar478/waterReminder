@@ -9,10 +9,26 @@ import SwiftUI
 
 struct ChangeCupButtonContent: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: "waterbottle.fill")
+                .font(.title)
+                .foregroundStyle(.pointer)
+                .overlay(
+                    Circle()
+                        .stroke(Color.pointer.opacity(0.5), lineWidth: 0.6)
+                        .frame(width: 100, height: 60)
+                )
+            
+            Image(systemName: "arrow.triangle.2.circlepath.circle")
+                .background()
+                .foregroundStyle(Color.pointer.opacity(0.7))
+            
+            Text("Change")
+                .foregroundStyle(.sText)
+                .font(.caption2)
+        }
     }
 }
-
 #Preview {
     ChangeCupButtonContent()
 }

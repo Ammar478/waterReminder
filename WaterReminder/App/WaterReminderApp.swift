@@ -28,7 +28,7 @@ struct WaterReminderApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            UserProfileView()
                 .environmentObject(notificationManager)
         }
         .modelContainer(sharedModelContainer)

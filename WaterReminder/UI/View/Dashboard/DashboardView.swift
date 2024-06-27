@@ -16,18 +16,12 @@ struct DashboardView: View {
         NavigationStack {
             ScrollView(.vertical,showsIndicators: false){
                 VStack(spacing: 30) {
-                    
                     UserWaterIntakeView(user: user, cupSize: $cupSize)
-                    
                 }
-                
             }
             .navigationTitle("Today")
-//            .navigationBarTitleDisplayMode(.inline)
             .customBackground()
-            
         }
-        
     }
     
 }

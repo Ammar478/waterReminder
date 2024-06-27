@@ -6,10 +6,25 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct UserProfileView: View {
+    
+    @Query private var users: [UserProfile]
+    @State private var viewModel = UserProfileViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            switch users.isEmpty {
+            case true:
+                OnBordingView()
+            case false:
+                MainView(users: users)
+                    .onAppear {
+                        viewModel.handleNewDay(users: users)
+                    }
+            }
+        }
     }
 }
 
