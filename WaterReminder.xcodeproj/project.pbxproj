@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F4340B82C2AEDB90077D82C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4340B72C2AEDB90077D82C /* Coordinator.swift */; };
 		F053516A2BE25EE0002515B8 /* WaterReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351692BE25EE0002515B8 /* WaterReminderApp.swift */; };
 		F05351702BE25EE1002515B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F053516F2BE25EE1002515B8 /* Assets.xcassets */; };
 		F05351732BE25EE1002515B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05351722BE25EE1002515B8 /* Preview Assets.xcassets */; };
@@ -102,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F4340B72C2AEDB90077D82C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F05351662BE25EE0002515B8 /* WaterReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05351692BE25EE0002515B8 /* WaterReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderApp.swift; sourceTree = "<group>"; };
 		F053516F2BE25EE1002515B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				F05351CB2BE94418002515B8 /* Extensions */,
+				5F4340B72C2AEDB90077D82C /* Coordinator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				F05979602BFA366200822F38 /* NoHistoryWater.swift in Sources */,
 				F07615942BF3EA9A009A9F6B /* DrinkTypePieChartView.swift in Sources */,
 				F05351B72BE8E635002515B8 /* HistoryView.swift in Sources */,
+				5F4340B82C2AEDB90077D82C /* Coordinator.swift in Sources */,
 				F053519C2BE51C3D002515B8 /* IntakeRecoredElementView.swift in Sources */,
 				F05352142BF02210002515B8 /* CustomInputField.swift in Sources */,
 				F05351D42BECD447002515B8 /* HydrationSummary.swift in Sources */,
