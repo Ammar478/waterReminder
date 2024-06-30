@@ -2,8 +2,7 @@ import SwiftUI
 import SwiftData
 
 struct HydrationSummary: View {
-//    @Query(sort:\DrinkHistory.drinkDate , animation: .easeIn) private var drinkHistory:[DrinkHistory]
-    private var drinkHistory = generateMockDrinkHistories(for: 6, year: 2024)
+    @Query(sort:\DrinkHistory.drinkDate , animation: .easeIn) private var drinkHistory:[DrinkHistory]
     
     var histories: [DrinkHistory] {
         drinkHistory.groupedByWeeks()

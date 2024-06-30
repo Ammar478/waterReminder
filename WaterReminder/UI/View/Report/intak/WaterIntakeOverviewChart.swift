@@ -10,8 +10,7 @@ import SwiftUI
 import SwiftData
 
 struct WaterIntakeOverviewChart: View {
-    //    @Query private var dataModel:[DrinkHistory]
-    let dataModel = generateMockDrinkHistories(for: 6, year: 2024)
+    @Query private var dataModel:[DrinkHistory]
     
     private var last7Days: [DrinkHistory] {
         
@@ -22,12 +21,10 @@ struct WaterIntakeOverviewChart: View {
         return dataModel.calculatePercentageChange()
     }
     
-    
     private func averageWaterIntake(for days: [DrinkHistory]) -> Double {
         let totalIntake = days.reduce(0.0) { $0 + $1.currentDrink }
         return days.isEmpty ? 0 : totalIntake / Double(days.count)
     }
-    
     
     private var totalWaterIntake: Double {
         

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F4340B82C2AEDB90077D82C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4340B72C2AEDB90077D82C /* Coordinator.swift */; };
 		5FFE8F822C2D944E00D6FEA4 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F812C2D944E00D6FEA4 /* UserProfileViewModel.swift */; };
 		5FFE8F842C2D950700D6FEA4 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F832C2D950700D6FEA4 /* UserProfileView.swift */; };
 		5FFE8F862C2D9CF900D6FEA4 /* WaterIntakeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F852C2D9CF900D6FEA4 /* WaterIntakeManager.swift */; };
@@ -16,6 +15,11 @@
 		5FFE8F8D2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F8C2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift */; };
 		5FFE8F8F2C2DA88100D6FEA4 /* GridSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F8E2C2DA88100D6FEA4 /* GridSection.swift */; };
 		5FFE8F912C2DA8D800D6FEA4 /* WaterSelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F902C2DA8D800D6FEA4 /* WaterSelectionModel.swift */; };
+		5FFE8F932C314B5700D6FEA4 /* IntakeRecordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F922C314B5700D6FEA4 /* IntakeRecordListView.swift */; };
+		5FFE8F962C3156D500D6FEA4 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F952C3156D500D6FEA4 /* Statistic.swift */; };
+		5FFE8F982C315C3100D6FEA4 /* WaterIntakeSummaryCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F972C315C3100D6FEA4 /* WaterIntakeSummaryCalculator.swift */; };
+		5FFE8F9A2C315C8300D6FEA4 /* HydrationSummaryChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F992C315C8300D6FEA4 /* HydrationSummaryChart.swift */; };
+		5FFE8F9C2C315DB400D6FEA4 /* SummaryStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE8F9B2C315DB400D6FEA4 /* SummaryStatisticView.swift */; };
 		F053516A2BE25EE0002515B8 /* WaterReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05351692BE25EE0002515B8 /* WaterReminderApp.swift */; };
 		F05351702BE25EE1002515B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F053516F2BE25EE1002515B8 /* Assets.xcassets */; };
 		F05351732BE25EE1002515B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05351722BE25EE1002515B8 /* Preview Assets.xcassets */; };
@@ -110,7 +114,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5F4340B72C2AEDB90077D82C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		5FFE8F812C2D944E00D6FEA4 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		5FFE8F832C2D950700D6FEA4 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		5FFE8F852C2D9CF900D6FEA4 /* WaterIntakeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeManager.swift; sourceTree = "<group>"; };
@@ -119,6 +122,11 @@
 		5FFE8F8C2C2DA7BC00D6FEA4 /* ChangeCupButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCupButtonContent.swift; sourceTree = "<group>"; };
 		5FFE8F8E2C2DA88100D6FEA4 /* GridSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridSection.swift; sourceTree = "<group>"; };
 		5FFE8F902C2DA8D800D6FEA4 /* WaterSelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSelectionModel.swift; sourceTree = "<group>"; };
+		5FFE8F922C314B5700D6FEA4 /* IntakeRecordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntakeRecordListView.swift; sourceTree = "<group>"; };
+		5FFE8F952C3156D500D6FEA4 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		5FFE8F972C315C3100D6FEA4 /* WaterIntakeSummaryCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterIntakeSummaryCalculator.swift; sourceTree = "<group>"; };
+		5FFE8F992C315C8300D6FEA4 /* HydrationSummaryChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationSummaryChart.swift; sourceTree = "<group>"; };
+		5FFE8F9B2C315DB400D6FEA4 /* SummaryStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryStatisticView.swift; sourceTree = "<group>"; };
 		F05351662BE25EE0002515B8 /* WaterReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05351692BE25EE0002515B8 /* WaterReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderApp.swift; sourceTree = "<group>"; };
 		F053516F2BE25EE1002515B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -337,6 +345,7 @@
 				F05351B62BE8E635002515B8 /* HistoryView.swift */,
 				F059795F2BFA366200822F38 /* NoHistoryWater.swift */,
 				F05979842C15909500822F38 /* SectionHistoryHeaderView.swift */,
+				5FFE8F922C314B5700D6FEA4 /* IntakeRecordListView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -382,6 +391,10 @@
 			children = (
 				F07615912BF3DF6B009A9F6B /* WaterIntakeOverviewChart.swift */,
 				F07615952BF3F878009A9F6B /* WaterIntakeDetails.swift */,
+				5FFE8F952C3156D500D6FEA4 /* Statistic.swift */,
+				5FFE8F972C315C3100D6FEA4 /* WaterIntakeSummaryCalculator.swift */,
+				5FFE8F992C315C8300D6FEA4 /* HydrationSummaryChart.swift */,
+				5FFE8F9B2C315DB400D6FEA4 /* SummaryStatisticView.swift */,
 			);
 			path = intak;
 			sourceTree = "<group>";
@@ -432,7 +445,6 @@
 			isa = PBXGroup;
 			children = (
 				F05351CB2BE94418002515B8 /* Extensions */,
-				5F4340B72C2AEDB90077D82C /* Coordinator.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -613,9 +625,10 @@
 				F05979602BFA366200822F38 /* NoHistoryWater.swift in Sources */,
 				F07615942BF3EA9A009A9F6B /* DrinkTypePieChartView.swift in Sources */,
 				F05351B72BE8E635002515B8 /* HistoryView.swift in Sources */,
-				5F4340B82C2AEDB90077D82C /* Coordinator.swift in Sources */,
 				F053519C2BE51C3D002515B8 /* IntakeRecoredElementView.swift in Sources */,
 				5FFE8F862C2D9CF900D6FEA4 /* WaterIntakeManager.swift in Sources */,
+				5FFE8F9A2C315C8300D6FEA4 /* HydrationSummaryChart.swift in Sources */,
+				5FFE8F982C315C3100D6FEA4 /* WaterIntakeSummaryCalculator.swift in Sources */,
 				F05352142BF02210002515B8 /* CustomInputField.swift in Sources */,
 				F05351D42BECD447002515B8 /* HydrationSummary.swift in Sources */,
 				F053519A2BE51605002515B8 /* HistoryOnDailyView.swift in Sources */,
@@ -639,11 +652,14 @@
 				F05979892C15BA6B00822F38 /* HydrationListView.swift in Sources */,
 				5FFE8F8F2C2DA88100D6FEA4 /* GridSection.swift in Sources */,
 				F05979562BF8D8B900822F38 /* LocalNotification.swift in Sources */,
+				5FFE8F932C314B5700D6FEA4 /* IntakeRecordListView.swift in Sources */,
 				F05979542BF8D23700822F38 /* ReminderCalenderView.swift in Sources */,
 				F05351892BE3D0C6002515B8 /* PreviewContiner.swift in Sources */,
 				F05351942BE5158C002515B8 /* UserWaterIntakeView.swift in Sources */,
 				F07615962BF3F878009A9F6B /* WaterIntakeDetails.swift in Sources */,
 				F05351BD2BE92F2C002515B8 /* DailyWaterDrinkData.swift in Sources */,
+				5FFE8F962C3156D500D6FEA4 /* Statistic.swift in Sources */,
+				5FFE8F9C2C315DB400D6FEA4 /* SummaryStatisticView.swift in Sources */,
 				F05351D12BECC43E002515B8 /* DrinkHistoryRecord.swift in Sources */,
 				F076159A2BF4ADA9009A9F6B /* DrinkTypeDetailsChart.swift in Sources */,
 				5FFE8F822C2D944E00D6FEA4 /* UserProfileViewModel.swift in Sources */,

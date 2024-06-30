@@ -11,11 +11,7 @@ import SwiftData
 
 
 struct DrinkTypePieChartView: View {
-//    @Query private var dataModel:[DrinkHistory]
-    let dataModel = generateMockDrinkHistories(for: 5, year: 2024)
-
-    
-    
+    @Query private var dataModel:[DrinkHistory]
     
     private var drinkTypeCounts: [(type: DrinkTypes, amount: Double)] {
         var counts: [DrinkTypes: Double] = [:]

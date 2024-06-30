@@ -9,8 +9,7 @@ import Charts
 import SwiftData
 
 struct DrinkTypeDetailsChart: View {
-    //    @Query private var dataModel:[DrinkHistory]
-    let dataModel = generateMockDrinkHistories(for: 6, year: 2024)
+        @Query private var dataModel:[DrinkHistory]
     
     @State private var selectedDrinkType: DrinkTypes? = .juices
     var analyzed: DrinkAnalysis {
