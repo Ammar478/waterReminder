@@ -23,27 +23,12 @@ final class DailyWaterDrink {
         self.intakeRecords = intakeRecords
         
     }
-    
-    func addIntake(amount: WaterIntake) {
-        let newRecord = IntakeRecords(drinkTime: Date(), drinkinfo: amount)
-        intakeRecords.append(newRecord)
-        currentDrink += amount.amount
-    }
-    
-    var progress: Float {
-        Float(currentDrink / dailyGoal)
-    }
-    
-    var sortedIntakes: [IntakeRecords] {
-        intakeRecords.sorted(by: { $0.drinkTime > $1.drinkTime })
-    }
-    
-    var isAchivedGoal:Bool{
-        currentDrink >= dailyGoal
-    }
-    
-    var metGoal: MetDailyGoal {
-        return isAchivedGoal ? .achieved : .notAchieved
-    }
-    
+}
+
+extension DailyWaterDrink{
+    static let defaultDrinkAmount:Int64 = 0
+    static let defaultPreviuseGoal:Int64 = 0
+    static let defalutGoal = 3000.00
+    static let defaultDate = Date()
+    static let defaultCurrentDrink:Double = 0
 }

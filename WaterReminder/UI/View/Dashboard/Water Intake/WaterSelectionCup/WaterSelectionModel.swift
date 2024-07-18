@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WaterIntake: Identifiable, Codable, Hashable {
+struct DrinkInformations: Identifiable, Codable, Hashable {
     var id: Int
     var amount: Double
     var drinkType: DrinkTypes

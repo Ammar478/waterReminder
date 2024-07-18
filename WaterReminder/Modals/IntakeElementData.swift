@@ -10,5 +10,5 @@ import Foundation
 
 struct IntakeRecords:Codable, Hashable{
     var drinkTime:Date
-    var drinkinfo:WaterIntake
+    var drinkinfo:DrinkInformations
 }

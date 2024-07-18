@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SwitchCup: View {
     @Environment(\.dismiss) var dismiss
-    @Binding var cupSize: WaterIntake
-    var action: (WaterIntake) -> Void
+    @Binding var cupSize: DrinkInformations
+    var action: (DrinkInformations) -> Void
 
     var body: some View {
         NavigationStack {

@@ -40,3 +40,5 @@ struct WaterIntakeSummaryCalculator {
         last30Days.max(by: { $0.currentDrink < $1.currentDrink })
     }
 }
+
+

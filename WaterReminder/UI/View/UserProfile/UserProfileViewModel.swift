@@ -13,7 +13,7 @@ final class UserProfileViewModel {
 
     func handleNewDay(users: [UserProfile]) {
         let currentDate = Date.now
-        let lastRecordedDate = users.first?.dailyWater?.dailyDate
+        let lastRecordedDate = users.first?.dailyDrink.dailyDate
         
         if let record = lastRecordedDate, isDifferentDay(currentDate, from: record) {
             recordNewDay(users: users, nextDate: currentDate)

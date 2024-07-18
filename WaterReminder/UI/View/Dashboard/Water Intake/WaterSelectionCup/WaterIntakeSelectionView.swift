@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct WaterIntakeSelectionView: View {
-    @Binding var cupSize: WaterIntake
-     var changeCupSize: (WaterIntake) -> Void
+    @Binding var cupSize: DrinkInformations
+     var changeCupSize: (DrinkInformations) -> Void
      
      var body: some View {
          HStack(alignment: .center, spacing: 30) {

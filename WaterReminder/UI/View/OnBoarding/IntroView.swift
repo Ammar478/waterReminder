@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct IntroView<ActiveView:View>:View {
+struct IntroView<VM:PersonalViewModal, ActiveView:View>:View {
     @EnvironmentObject var nlManger:NotificationLocalManager
+    @State var viewModel:VM
     
-    @Binding var inro:PageIntro
     var size:CGSize
     var activeView :ActiveView
+  
     
-    init(inro: Binding<PageIntro>, size: CGSize, @ViewBuilder activeView: @escaping() -> ActiveView) {
-        self._inro = inro
+    init( viewModel:VM,size: CGSize, @ViewBuilder activeView: @escaping() -> ActiveView) {
+        self._viewModel = .init(initialValue: viewModel)
         self.size = size
         self.activeView = activeView()
     }
@@ -26,7 +27,7 @@ struct IntroView<ActiveView:View>:View {
     var body: some View{
         VStack{
             GeometryReader { geometry in
-                Image(inro.introAssetImage)
+                Image(viewModel.activeIntor.introAssetImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: geometry.size.width, height: geometry.size.height)
@@ -36,27 +37,27 @@ struct IntroView<ActiveView:View>:View {
             
             VStack(alignment: .leading,spacing: 10){
                 Spacer(minLength: 0)
-                Text(inro.title)
+                Text(viewModel.activeIntor.title)
                     .font(.system(size: 40))
                     .fontWeight(.black)
                     .foregroundStyle(.p1)
                 
-                Text(inro.subTitle)
+                Text(viewModel.activeIntor.subTitle)
                     .font(.caption)
                     .foregroundStyle(.sText)
                     .padding(.top,15)
                 
-                if !inro.dispaysActions {
+                if !viewModel.activeIntor.dispaysActions {
                     Group{
                         Spacer(minLength: 25)
                         
-                        CustomIndicatorView(totalPages: filterPages.count, currentPage: filterPages.firstIndex(of: inro) ?? 0)
+                        CustomIndicatorView(totalPages: filterPages.count, currentPage: filterPages.firstIndex(of: viewModel.activeIntor) ?? 0)
                             .frame(maxWidth: .infinity)
                         
                         Spacer(minLength: 10)
                         
                         Button{
-                            if inro.introAssetImage == "image4"{
+                            if viewModel.activeIntor.introAssetImage == "image4"{
                                 Task{
                                     await nlManger.requestAuthorization()
                                     changeInrto()
@@ -91,7 +92,7 @@ struct IntroView<ActiveView:View>:View {
         .opacity(hideHoolView ? 0 : 1)
         
         .overlay(alignment:.topLeading){
-            if inro != pagesIntro.first{
+            if viewModel.activeIntor != pagesIntro.first{
                 Button{
                     changeInrto(true)
                 }label: {
@@ -119,10 +120,10 @@ struct IntroView<ActiveView:View>:View {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
-            if let index = pagesIntro.firstIndex(of: inro),(isPrevious ? index != 0 : index != pagesIntro.count - 1 ){
-                inro = isPrevious ? pagesIntro[index - 1] : pagesIntro[index + 1]
+            if let index = pagesIntro.firstIndex(of: viewModel.activeIntor),(isPrevious ? index != 0 : index != pagesIntro.count - 1 ){
+                viewModel.activeIntor = isPrevious ? pagesIntro[index - 1] : pagesIntro[index + 1]
             }else{
-                inro = isPrevious ? pagesIntro[0] : pagesIntro[pagesIntro.count - 1]
+                viewModel.activeIntor = isPrevious ? pagesIntro[0] : pagesIntro[pagesIntro.count - 1]
             }
             
             hideHoolView = false

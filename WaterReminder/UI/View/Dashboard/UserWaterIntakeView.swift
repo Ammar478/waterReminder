@@ -9,22 +9,22 @@ import SwiftUI
 
 struct UserWaterIntakeView: View {
     var user: UserProfile
-    @Binding var cupSize: WaterIntake
+    @Binding var cupSize: DrinkInformations
     
     var body: some View {
-            if let dailyWater = user.dailyWater {
-                VStack(spacing: 30) {
-                    GaugeProgressView(progress: dailyWater.progress, amountDrinked: dailyWater.currentDrink,dailyGoal: dailyWater.dailyGoal)
-                        .frame(width: 180, height: 180)
-                        .padding()
-                    
-                    WaterIntakeView(dailyWater: dailyWater, cupSize: $cupSize)
-
-                    HistoryOnDailyView(dailyWater: dailyWater)
-                        .padding(.horizontal,10)
-                    
-                }
-            }
+        
+        VStack(spacing: 30) {
+            GaugeProgressView(progress: user.dailyDrink.progress, amountDrinked: user.dailyDrink.currentDrink,dailyGoal: user.dailyDrink.dailyGoal)
+                .frame(width: 180, height: 180)
+                .padding()
+            
+            WaterIntakeView(dailyWater: user.dailyDrink, cupSize: $cupSize)
+            
+            HistoryOnDailyView(dailyWater: user.dailyDrink)
+                .padding(.horizontal,10)
+            
         }
+    }
+    
 }
 

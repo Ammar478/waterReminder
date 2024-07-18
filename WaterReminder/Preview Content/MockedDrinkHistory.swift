@@ -20,7 +20,7 @@ func generateMockDrinkHistories(for month: Int, year: Int) -> [DrinkHistory] {
         let drinkRecord = (1...3).map { _ in
             IntakeRecords(
                 drinkTime: date.addingTimeInterval(Double.random(in: 0...86400)),  // Random time in the day
-                drinkinfo: WaterIntake(
+                drinkinfo: DrinkInformations(
                     id: Int.random(in: 1...100),
                     amount: Double.random(in: 200...500),
                     drinkType: types.randomElement()!

@@ -8,20 +8,55 @@
 import SwiftUI
 import SwiftData
 
-struct DashboardView: View {
+struct DashboardView<VM:DashboardViewModel>: View {
+    @State var viewModel: VM
+    
     var user:UserProfile
-    @State private var cupSize: WaterIntake = WaterIntake(id: 0, amount: 150, drinkType: .water)
+    
+    init(user:UserProfile,viewModel:VM){
+        self.user = user
+        self._viewModel = .init(initialValue: viewModel)
+    }
     
     var body: some View {
-        NavigationStack {
-            ScrollView(.vertical,showsIndicators: false){
-                VStack(spacing: 30) {
-                    UserWaterIntakeView(user: user, cupSize: $cupSize)
+        ScrollView(.vertical,showsIndicators: false){
+            VStack(spacing: 30) {
+                GaugeProgressView(progress: viewModel.progress, amountDrinked: viewModel.currentDrink
+                                  ,dailyGoal: viewModel.dailyGoal
+                )
+                .frame(width: 180, height: 180)
+                .padding()
+                
+                VStack(spacing: 10) {
+                    AddWater(cupSize: viewModel.cupSize,
+                             action: { try? await viewModel.addDailyDrink(amount: viewModel.cupSize) })
+                    
+                    WaterIntakeSelectionView(cupSize: $viewModel.cupSize,
+                                             changeCupSize:{ viewModel.changeCupSize(amount: $0) })
                 }
+                
+                HistoryOnDailyView(dailyDrinkHistory: viewModel.dailyDrinkHistory)
+                    .padding(.horizontal,10)
+                
             }
-            .navigationTitle("Today")
-            .customBackground()
+            .refreshable {await update()}
+        }
+        .navigationTitle("Today")
+        .customBackground()
+        .task {
+            await update()
+        }
+        .animation(.smooth , value: viewModel.dailyDrinkHistory)
+    }
+    
+    func update() async{
+        do{
+            try await viewModel.loadCountent()
+        }catch{
+            print("unable to load the dashboard:\(error)")
         }
     }
     
 }
+
+
