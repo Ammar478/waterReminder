@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ReportDestinations: Hashable {
+enum ReportDestinations: Hashable, Codable {
     case intake
     case goal
 }

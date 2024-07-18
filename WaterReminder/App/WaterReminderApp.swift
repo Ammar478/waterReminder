@@ -10,28 +10,26 @@ import SwiftData
 
 @main
 struct WaterReminderApp: App {
-    @StateObject private var notificationManager = NotificationLocalManager()
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            UserProfile.self,
-          
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+    @StateObject var coordinator: MainCoordinator
+    @StateObject var localStorage: LocalStorage
+    @State var api: API
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    init() {
+        let localStorage = LocalStorage()
+        let api = MockAPI(localStorage: localStorage)
+        
+        _api = .init(initialValue: api)
+        _coordinator = .init(wrappedValue: MainCoordinator(
+            localStorage: localStorage,
+            api: api
+        ))
+        _localStorage = .init(wrappedValue: localStorage)
+    }
     
-
     var body: some Scene {
         WindowGroup {
-            UserProfileView()
-                .environmentObject(notificationManager)
+            coordinator.rootView()
         }
-        .modelContainer(sharedModelContainer)
-        
+        .windowResizability(.contentSize)       
     }
 }

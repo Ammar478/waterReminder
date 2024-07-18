@@ -8,19 +8,24 @@ import SwiftUI
 import Charts
 import SwiftData
 
-struct DrinkTypeDetailsChart: View {
-        @Query private var dataModel:[DrinkHistory]
+struct DrinkTypeDetailsChart<VM:DrinkTypeDetailsModel>: View {
+    @State var viewModel:VM
+    
+    init(viewModel: VM) {
+        self._viewModel = .init(initialValue: viewModel)
+        
+    }
     
     @State private var selectedDrinkType: DrinkTypes? = .juices
     var analyzed: DrinkAnalysis {
-        analyzeDrinks(dataModel: dataModel)
+        analyzeDrinks(dataModel: viewModel.last30Days)
     }
     @State private var animate: Bool = false
     
     private var drinkTypeCounts: [(type: DrinkTypes, amount: Double)] {
         var counts: [DrinkTypes: Double] = [:]
         
-        for history in dataModel {
+        for history in viewModel.last30Days {
             for record in history.drinkRecored {
                 counts[record.drinkinfo.drinkType, default: 0] += record.drinkinfo.amount
             }
@@ -36,7 +41,7 @@ struct DrinkTypeDetailsChart: View {
         List{
             
             
-            Text("Hydration for the past \(dataModel.count) days is \(String(format: "%.2f", analyzed.highestHydration ?? 0))%")
+            Text("Hydration for the past \(viewModel.last30Days.count) days is \(String(format: "%.2f", analyzed.highestHydration ?? 0))%")
                 .font(.headline)
                 .padding(.bottom)
             
@@ -65,7 +70,7 @@ struct DrinkTypeDetailsChart: View {
             
             Section {
                 ForEach(drinkTypeCounts, id: \.type) { type in
-                    CardContent(label: type.type.title, value: "\(String(format: "%.0f", type.amount / Double(dataModel.count))) mL/day", color: type.type.color)
+                    CardContent(label: type.type.title, value: "\(String(format: "%.0f", type.amount / Double(viewModel.last30Days.count))) mL/day", color: type.type.color)
                         .listRowBackground(RoundedRectangle(cornerRadius: 10).fill(Color(.systemGray6)).padding(.vertical,6))
                         .padding(10)
                         .listRowSeparator(.hidden)

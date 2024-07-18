@@ -11,9 +11,9 @@ import SwiftData
 struct WaterIntakeView: View {
     @Environment(\.modelContext) private var modelContext
     @StateObject private var waterIntakeModel: WaterIntakeModel
-    @Binding var cupSize: WaterIntake
+    @Binding var cupSize: DrinkInformations
     
-    init(dailyWater: DailyWaterDrink, cupSize: Binding<WaterIntake>) {
+    init(dailyWater: DailyDrinkRecord, cupSize: Binding<DrinkInformations>) {
         _waterIntakeModel = StateObject(wrappedValue: WaterIntakeModel(dailyWater: dailyWater))
         _cupSize = cupSize
     }

@@ -8,30 +8,28 @@
 import SwiftUI
 
 struct HistoryOnDailyView: View {
-    var dailyWater: DailyWaterDrink
+    var dailyDrinkHistory: [IntakeRecords]
     
-    func delteItem(at offsets:IndexSet){
-        dailyWater.intakeRecords.remove(atOffsets: offsets)
+    init(dailyDrinkHistory: [IntakeRecords]) {
+        self.dailyDrinkHistory = dailyDrinkHistory
     }
     
     var body: some View {
         VStack(alignment:.leading){
             Section{
                 VStack{
-                    if dailyWater.intakeRecords.isEmpty {
+                    if dailyDrinkHistory.isEmpty {
                         ContentUnAvailableUI(unAvailableContentDescription: "You have no history of water intake today")
                     } else {
                         
-                        ForEach(dailyWater.sortedIntakes,id:\.self) { intake in
+                        ForEach(dailyDrinkHistory,id:\.self) { intake in
                             IntakeRecoredElementView(intake: intake)
-                                
+                            
                         }
                         
-                        .onDelete(perform:delteItem)
                     }
                     
                 }
-              
                 
             }header: {
                 HStack(alignment:.center,spacing: 7){
@@ -40,13 +38,13 @@ struct HistoryOnDailyView: View {
                 }
                 .font(.callout)
                 .foregroundStyle(.secondary)
-               
-                 
+                
+                
             }
         }
     }
 }
 
 #Preview {
-    HistoryOnDailyView(dailyWater: DailyWaterDrink(dailyDate: Date.now, dailyGoal: 3000, currentDrink: 2000))
+    HistoryOnDailyView(dailyDrinkHistory: [])
 }

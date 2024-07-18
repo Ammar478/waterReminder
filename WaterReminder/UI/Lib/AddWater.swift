@@ -8,23 +8,15 @@
 import SwiftUI
 
 struct AddWater: View {
-    var cupSize: WaterIntake
-    var action:()->Void
+    var cupSize: DrinkInformations
+    var action:() async throws -> Void
     
     
     @State private var isAnimating = false
     
     var body: some View {
         
-        Button(action: {
-            action()
-            withAnimation(.easeInOut(duration: 0.3)) {
-                isAnimating.toggle()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                    isAnimating.toggle()
-                }
-            }
-        }) {
+        Button(action: {Task{ await addDrinkIntack()}}) {
             
             VStack{
                 ZStack{
@@ -47,7 +39,22 @@ struct AddWater: View {
             
         }
         
-    }  
+    }
+    
+    func addDrinkIntack() async {
+        do{
+            try await action()
+            
+            withAnimation(.easeInOut(duration: 0.3)) {
+                isAnimating.toggle()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    isAnimating.toggle()
+                }
+            }
+        }catch{
+            print("error to add drink intack : \(error)")
+        }
+    }
     
 }
 

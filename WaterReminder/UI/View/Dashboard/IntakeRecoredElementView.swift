@@ -37,7 +37,7 @@ struct IntakeRecoredElementView: View {
                     .bold()
                 
                 Spacer()
-                   
+                
                 Text(intake.drinkTime.formatted(date: .omitted, time: .shortened))
                     .font(.caption)
                     .foregroundColor(.sText)

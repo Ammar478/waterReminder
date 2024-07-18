@@ -9,8 +9,8 @@ import SwiftUI
 import SwiftData
 
 protocol WaterIntakeManaging {
-    func addIntakeWater(amount: WaterIntake ,modelContext:ModelContext)
-    func changeCupSize(_ amount: WaterIntake, cupSize: Binding<WaterIntake>)
+    func addIntakeWater(amount: DrinkInformations ,modelContext:ModelContext)
+    func changeCupSize(_ amount: DrinkInformations, cupSize: Binding<DrinkInformations>)
 }
 
 

@@ -8,13 +8,16 @@
 import SwiftUI
 import SwiftData
 
-struct WaterIntakeDetailsSummary: View {
-    @Query private var dataModel: [DrinkHistory]
+struct WaterIntakeDetailsSummary<VM:DrinkIntakeDetailsModel>: View {
+    @State var viewModel:VM
+    
+    init(viewModel:VM){
+        self._viewModel = .init(initialValue: viewModel)
+    }
+    
     @State private var selectedStatistic: Statistic? = .defaultValue
     
-    private var calculator: WaterIntakeSummaryCalculator {
-        WaterIntakeSummaryCalculator(dataModel: dataModel)
-    }
+
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -22,10 +25,10 @@ struct WaterIntakeDetailsSummary: View {
                 VStack(alignment: .leading) {
                     header
                     HydrationSummaryChart(
-                        data: calculator.last30Days,
+                        data: viewModel.last30Days,
                         selectedStatistic: selectedStatistic ?? .defaultValue,
                         selectedValue: selectedValue(for: selectedStatistic ?? .defaultValue),
-                        bestDay: calculator.bestDay
+                        bestDay: viewModel.bestDay
                     )
                     .padding([.leading, .trailing, .bottom])
                 }
@@ -39,6 +42,15 @@ struct WaterIntakeDetailsSummary: View {
             }
         }
         .customBackground()
+        .toolbar{
+            ToolbarItem(placement: .navigation) {
+                Button {
+                    viewModel.dismiss()
+                } label: {
+                    Label("Back", systemImage: "chevron.backward")
+                }
+            }
+        }
     }
     
     private var header: some View {
@@ -48,7 +60,7 @@ struct WaterIntakeDetailsSummary: View {
                 .foregroundStyle(.sText)
                 .padding([.top, .leading, .trailing])
             
-            Text("\(calculator.last30Days.reduce(0) { $0 + $1.currentDrink }, specifier: "%.0f") ml in Last \(dataModel.count) Days")
+            Text("\(viewModel.last30Days.reduce(0) { $0 + $1.currentDrink }, specifier: "%.0f") ml in Last \(viewModel.last30Days.count) Days")
                 .font(.title3)
                 .bold()
                 .foregroundStyle(.pointer)
@@ -60,7 +72,7 @@ struct WaterIntakeDetailsSummary: View {
         VStack(spacing: 10) {
             SummaryStatisticView(
                 title: "Daily Average",
-                value: String(format: "%.0f ml", calculator.dailyAverage),
+                value: String(format: "%.0f ml", viewModel.dailyAverage),
                 isSelected: selectedStatistic == .dailyAverage
             )
             .onTapGesture {
@@ -68,7 +80,7 @@ struct WaterIntakeDetailsSummary: View {
             }
             SummaryStatisticView(
                 title: "Weekday Average",
-                value: String(format: "%.0f ml", calculator.weekdayAverage),
+                value: String(format: "%.0f ml", viewModel.weekdayAverage),
                 isSelected: selectedStatistic == .weekdayAverage
             )
             .onTapGesture {
@@ -76,13 +88,13 @@ struct WaterIntakeDetailsSummary: View {
             }
             SummaryStatisticView(
                 title: "Weekend Average",
-                value: String(format: "%.0f ml", calculator.weekendAverage),
+                value: String(format: "%.0f ml", viewModel.weekendAverage),
                 isSelected: selectedStatistic == .weekendAverage
             )
             .onTapGesture {
                 selectedStatistic = .weekendAverage
             }
-            if let bestDay = calculator.bestDay {
+            if let bestDay = viewModel.bestDay {
                 SummaryStatisticView(
                     title: "Best Hydration Day",
                     value: "\(bestDay.drinkDate.formattedDate)",
@@ -99,13 +111,13 @@ struct WaterIntakeDetailsSummary: View {
     private func selectedValue(for statistic: Statistic) -> Double {
         switch statistic {
         case .dailyAverage:
-            return calculator.dailyAverage
+            return viewModel.dailyAverage
         case .weekdayAverage:
-            return calculator.weekdayAverage
+            return viewModel.weekdayAverage
         case .weekendAverage:
-            return calculator.weekendAverage
+            return viewModel.weekendAverage
         case .bestDay:
-            return calculator.bestDay?.currentDrink ?? 0
+            return viewModel.bestDay?.currentDrink ?? 0
         case .defaultValue:
             return 0
         }

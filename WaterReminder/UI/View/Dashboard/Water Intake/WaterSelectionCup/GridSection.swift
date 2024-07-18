@@ -9,9 +9,9 @@ import SwiftUI
 
 struct GridSection: View {
     var title: String?
-    var items: [WaterIntake]
-    @Binding var cupSize: WaterIntake
-    var action: (WaterIntake) -> Void
+    var items: [DrinkInformations]
+    @Binding var cupSize: DrinkInformations
+    var action: (DrinkInformations) -> Void
     var dismiss: DismissAction
 
     var body: some View {

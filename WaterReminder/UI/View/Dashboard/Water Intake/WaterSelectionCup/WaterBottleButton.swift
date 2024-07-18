@@ -9,8 +9,8 @@ import SwiftUI
 
 
 struct DrinkCupButton: View {
-    var intake: WaterIntake
-    @Binding var selectedAmount: WaterIntake
+    var intake: DrinkInformations
+    @Binding var selectedAmount: DrinkInformations
     let action: () -> Void
 
     var body: some View {

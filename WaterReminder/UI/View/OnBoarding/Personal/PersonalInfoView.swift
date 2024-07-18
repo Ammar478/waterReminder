@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct PersonalInfoView: View {
-    @Environment(\.modelContext) var modelContext
-    
+struct PersonalInfoView<VM:PersonalViewModal>: View {
+    @State var viewModel: VM
+
     @State private var age: Int = 20
     @State private var height: Int = 160
     @State private var weight: Int = 60
     @State private var gender: Gender = .male
     @State private var activityLevel: ActivityLevel = .active
+    
+    init(viewModel:VM){
+        self._viewModel = .init(initialValue: viewModel)
+    }
     
     var body: some View {
         Form {
@@ -53,7 +57,9 @@ struct PersonalInfoView: View {
                 Spacer(minLength: 10)
                 
                 Button{
-                    addPersonlInfoToUser()
+                    Task{
+                        await addPersonlInfoToUser()
+                    }
                 }label: {
                     Text("Let's Flow")
                         .fontWeight(.semibold)
@@ -70,15 +76,23 @@ struct PersonalInfoView: View {
         }
         .formStyle(.columns)
     }
-    func addPersonlInfoToUser(){
-        let newUser = UserProfile(name: "",
-                                  age: self.age,
-                                  height: self.height,
-                                  weight: self.weight,
-                                  gender: self.gender,
-                                  activityLevel: self.activityLevel)
-        modelContext.insert(newUser)
-        newUser.addNewUser()
+    
+    func addPersonlInfoToUser() async {
+        let newUser = UserProfile(
+            name: "",
+            age: self.age,
+            height: self.height,
+            weight: self.weight,
+            gender: self.gender,
+            activityLevel: self.activityLevel
+        )
+        do{
+            try await viewModel.createUser(
+                user: newUser
+            )
+        }catch{
+            print("create new user :\(error)")
+        }
         
     }
 }
